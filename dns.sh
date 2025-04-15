@@ -29,7 +29,7 @@ options {
 EOL
 
     # Append zone configurations to named.conf.local
-    sudo tee -a /etc/bind/named.conf.local > /dev/null <<EOL
+    sudo tee /etc/bind/named.conf.local > /dev/null <<EOL
 zone "team3.cyberjousting.org" IN {
     type master;
     file "/etc/bind/externalforward.db";
